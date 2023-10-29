@@ -7,47 +7,49 @@ students = load_students()
 
 
 def choice_option():
+    """
+        Função que exibe o menu e chama as funções de acordo com a opção escolhida
+    """
     while True:
+        print_header()
         display_menu()
 
         option = input("Escolha uma opção: ")
 
         # Checando a opção escolhida
         if (option == '1'):
+            clear_screen()
             student = create_student(id)
-            
+
             if not student:
                 continue
 
             students.append(student)
 
         elif (option == '2'):
+            clear_screen()
             show_students(students)
 
         elif (option == '3'):
-            _id = read_integer(msg="Insira o ID: ", positive=True)
-            student = get_student_by_id(_id)
-
-            if student:
-                print(f"Aluno: {student['name']} ID {student['id']} - Sexo: {describe_gender(student['gender'])} - Peso: {student['weight']}kg - Altura: {convert_to_meters(student['height'])} metros - Mensalidade: {student['subscription']}")
-            else:
-                print(f"O(A) aluno(a) com o id {_id} não existe!")
+            clear_screen()
+            show_student(students)
 
         elif (option == '4'):
-            filter_students_by_BMI()
+            clear_screen()
+            filter_students_by_BMI(students)
 
         elif (option == '5'):
+            clear_screen()
             save_students(students)
+            print("Dados salvos com sucesso! Tchau!")
             break
 
         else:
+            clear_screen()
             print("A opção escolhida é inválida. Tente novamente")
-            
-        clear_screen()
 
 
 def main():
-    print_header()
     choice_option()
 
 

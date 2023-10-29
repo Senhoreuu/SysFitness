@@ -14,6 +14,9 @@ def print_header():
 
 
 def display_menu():
+    """
+        Exibe o menu de escolhas
+    """
     menu = """
     -------------------------------
     1 - Registrar um aluno

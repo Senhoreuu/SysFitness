@@ -52,6 +52,12 @@ def read_float(msg="", positive=False):
 
 
 def describe_gender(gender: str) -> str:
+    """
+        Descreve o sexo do aluno com base na sigla
+        
+        Parâmetro:
+            - ['f', 'm', 'o']: Sigla do sexo do aluno
+    """
     if gender == 'f':
         return 'Feminino'
     elif gender == 'm':
@@ -61,6 +67,9 @@ def describe_gender(gender: str) -> str:
 
 
 def convert_to_meters(cm: int) -> float:
+    """
+        Converte centímetros para metros
+    """
     return cm / 100
 
 
