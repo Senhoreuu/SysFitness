@@ -1,0 +1,64 @@
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+
+# Diretórios de dependências e módulos
+node_modules/
+venv/
+env/
+lib/
+libs/
+bin/
+dist/
+__pycache__/
+.idea/
+*.egg-info/
+*.egg/
+*.pyc
+
+# Arquivos de configuração específicos de editores
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de log e saída
+*.log
+
+# Arquivos de build e resultados de compilação
+build/
+dist/
+*.egg-info/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.cache
+.pycache/
+__pycache__
+
+# Diretórios de saída de testes
+.coverage
+.coverage.*
+.idea
+
+# Dependendo da linguagem ou ambiente de desenvolvimento, você pode precisar adicionar mais regras específicas.
+
+# Python
+*.pyc
+
+# Node.js
+node_modules/
+
+# Ruby
+*.gem
+.bundle/
+
+# Go
+package-lock.json
+
+*.sql
