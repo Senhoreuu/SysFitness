@@ -37,6 +37,7 @@ def get_last_id() -> int:
     """
         Retorna o último id cadastrado no banco de dados (students.json)
     """
-    data = load_students()
+
+    id = len(load_students()) + 1
     
-    return len(data) if len(data) > 0 else 1 
+    return id

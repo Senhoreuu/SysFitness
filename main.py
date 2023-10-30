@@ -2,11 +2,11 @@ from header import *
 from databaseController import *
 from studentController import *
 
-id = get_last_id()
-students = load_students()
-
 
 def choice_option():
+    id = get_last_id()
+    students = load_students()
+
     """
         Função que exibe o menu e chama as funções de acordo com a opção escolhida
     """
@@ -24,6 +24,8 @@ def choice_option():
 
             if not student:
                 continue
+            
+            id += 1
 
             students.append(student)
 

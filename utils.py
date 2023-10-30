@@ -84,7 +84,7 @@ def calculate_BMI(weight: float, height: int) -> float:
     Retorno:
         - Retorna o valor do IMC
     """
-    bmi = weight / ((height / 100) ** 2)
+    bmi = weight / convert_to_meters(height) ** 2
     return bmi
 
 
