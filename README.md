@@ -7,7 +7,7 @@ O Git é um sistema de controle de versões amplamente utilizado para rastrear e
 
 ## 1. Instalação
 
-Primeiro, você precisa instalar o Git em seu sistema. Você pode baixá-lo em [https://git-scm.com/](https://git-scm.com/) e seguir as instruções de instalação para o seu sistema operacional.
+Primeiro, você precisa instalar o Git em seu sistema. Você pode baixá-lo [aqui](https://git-scm.com/) e seguir as instruções de instalação para o seu sistema operacional.
 
 ## 2. Configuração Inicial
 
@@ -34,7 +34,7 @@ $ git init
 Para clonar o projeto, execute:
 
 ```git
-$ git clone [url-do-repositório](https://github.com/Senhoreuu/SysFitness.git)https://github.com/Senhoreuu/SysFitness.git
+$ git clone https://github.com/Senhoreuu/SysFitness.git
 ```
 
 `Isso clonará o projeto original para o seu diretório`
