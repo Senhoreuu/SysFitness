@@ -73,7 +73,7 @@ def convert_to_meters(cm: int) -> float:
     return cm / 100
 
 
-def calculate_BMI(weight, height):
+def calculate_BMI(weight: float, height: int) -> float:
     """
     Calcula o Índice de Massa Corporal (IMC) com base no peso e altura.
 
@@ -84,7 +84,7 @@ def calculate_BMI(weight, height):
     Retorno:
         - Retorna o valor do IMC
     """
-    bmi = weight / (height ** 2)
+    bmi = weight / ((height / 100) ** 2)
     return bmi
 
 

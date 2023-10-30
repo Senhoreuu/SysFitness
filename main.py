@@ -16,9 +16,10 @@ def choice_option():
 
         option = input("Escolha uma opção: ")
 
+        clear_screen()
+
         # Checando a opção escolhida
         if (option == '1'):
-            clear_screen()
             student = create_student(id)
 
             if not student:
@@ -27,25 +28,21 @@ def choice_option():
             students.append(student)
 
         elif (option == '2'):
-            clear_screen()
             show_students(students)
 
         elif (option == '3'):
-            clear_screen()
             show_student(students)
 
         elif (option == '4'):
-            clear_screen()
-            filter_students_by_BMI(students)
+            filtreds = filter_students_by_BMI(students)
+            show_students(filtreds)
 
         elif (option == '5'):
-            clear_screen()
             save_students(students)
             print("Dados salvos com sucesso! Tchau!")
             break
 
         else:
-            clear_screen()
             print("A opção escolhida é inválida. Tente novamente")
 
 
